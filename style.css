@@ -5,6 +5,7 @@
     font-family: sans-serif;
     
 }
+
       
   .family-profile {
    width: 100%;
@@ -13,9 +14,12 @@
    align-items: center;
    justify-content: center;
    position: relative;
-   background:url(images/cars.jpg);
+   background-image:url("images/cars.jpg");
    background-size: cover;
-   background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+   
  }
  .family{
     display:flex;
@@ -38,21 +42,24 @@
     position: relative;
     transition: width 0.5s;
  }
+  
+  
   .img-box:nth-child(2){
-    background: url(images/C66A9083.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  .img-box:nth-child(3){
     background: url(images/VinceM.JPG);
     background-size: cover;
     background-position: center;
   }
-  .img-box:nth-child(4){
+  .img-box:nth-child(3){
     background: url(images/plantpic.jpg);
     background-size: cover;
     background-position: center;
   }
+  .img-box:nth-child(4){
+    background: url(images/gradpicvdb.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
   .img-box h3{
     color:#fff;
     position:absolute;
