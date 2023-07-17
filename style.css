@@ -1,104 +1,71 @@
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
-    font-family:sans-serif;
-    box-sizing:border-box;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
 }
-.profile-container{
-    padding: 20px 15%;
-    color: #353131;
-    background-color: rgb(219, 219, 216);
-}
- .cover-img{
-    width: 100%;
-    border-radius: 6px;
-    margin-bottom: 14px;
-    position:relative;
-   
- } 
- .profile-details{
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+      
+  .family-profile {
+   width: 100%;
+   height: 100vh;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   background:url(images/cars.jpg);
+   background-size: cover;
+   background-position: center;
  }
- .pd-row{
-    display: flex;
-    align-items: flex-start;
- }
- .pd-image{
-    width: 100px;
-    margin-right: 20px;
-    border-radius: 6px;
- }
- .pd-row div h3{
-    font-size: 25px;
-    font-weight: 600;
-     }
-     .pd-row div img{
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        margin-top: 12px;
-     }
-.pd-right button{
-    background: #1876f2;
-    border:0;
-    outline:0;
-    padding: 6px 10px;
-    display: inline-flex;
+ .family{
+    display:flex;
     align-items: center;
-    color: #fff;
-    border-radius: 3px;
-    margin-left: 10px;
+    justify-content: center;
+    margin-top: 140px;
+    
+ }
+ 
+ 
+ 
+ .img-box{
+    width:100px;
+    height:500px;
+    margin:10px;
+    border-radius:50px;
+    background: url(images/standporch2.JPG);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+ }
+  .img-box:nth-child(2){
+    background: url(images/C66A9083.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .img-box:nth-child(3){
+    background: url(images/VinceM.JPG);
+    background-size: cover;
+    background-position: center;
+  }
+  .img-box:nth-child(4){
+    background: url(images/plantpic.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .img-box h3{
+    color:#fff;
+    position:absolute;
+    bottom: 0;
+    left: 120px;
+    opacity: 0;
+    transition:bottom 0.5s, opacity 0.5s;
+}
+.img-box:hover{
+    width: 300px;
     cursor: pointer;
 }
-.pd-right button img{
-    height: 15px;
-    margin-right: 10px;
+.img-box:hover h3{
+    opacity:1;
+    bottom: 25px;
 }
-.pd-right button:first-child{
-    background: #e4e6eb;
-    color: #000;
-}
-.pd-right{
-    text-align:right;
-}
-.pd-right a{
-    background: #e4e6eb;
-    border-radius: 3px;
-    padding: 12px;
-    display: inline-flex;
-    margin-top: 30px;
-}
-.pd-right a img{
-    width: 20px;
-}
- 
-    
-
-.profile-container img p{
-    color:#1876f2;
-    text-align: cener;
-}  
-.container{
-    width: 100%;
-    min-height:100vh;
-    background: #fcfafa;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-top: 14px;
-  }
-  .cover-pic{
-    width:300px;
-    height:300px;
-    display: block;
-    object-fit:cover;
-    object-position: center;
-    margin-left: 14px;
-    padding-right: 7px;
-  }
-  
