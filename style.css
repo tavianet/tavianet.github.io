@@ -5,19 +5,22 @@
     font-family: sans-serif;
     
 }
+body{
+  background-image:url("images/cars.jpg");
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
       
   .family-profile {
-   width: 100%;
+   width: 80%;
    height: 100vh;
    display:flex;
    align-items: center;
    justify-content: center;
    position: relative;
-   background-image:url("images/cars.jpg");
-   background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+   
     
    
  }
