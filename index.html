@@ -1,26 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Apartment for rent at 1226 Walnut Street, Allentown, PA 18102." />
+  <title>Apartment for Rent | 1226 Walnut Street</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    
-    <div class="family-profile">
-        
-     <div class="family">
-        
-     <div class="img-box"><h3>Wife</h3></div>
-     <div class="img-box"><h3>Mother & son</h3></div>
-     <div class="img-box"><h3>I took the picture</h3></div>
-     <div class="img-box"><h3>Daughter</h3></div>
-     </div>
-     <div class="bg-text">
-         <h1>I'm in the background</h1>
-         <p>And I also blur myself.</p>
-     </div>
-       
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">Walnut Street Rental</a>
+      <nav aria-label="Main navigation">
+        <a href="#details">Details</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Apartment for Rent</p>
+        <h1>1226 Walnut Street<br />Allentown, PA 18102</h1>
+        <p class="hero-text">A comfortable apartment in a convenient Allentown location.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Schedule a Showing</a>
+          <a class="btn btn-secondary" href="#gallery">View Photos</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="details">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Property Overview</p>
+          <h2>Simple, Comfortable Living</h2>
+          <p>Use this section to highlight the apartment's strongest features and update the sample information below.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <span class="feature-number">2</span>
+            <h3>Bedrooms</h3>
+            <p>Comfortable private rooms with flexible space.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">1</span>
+            <h3>Bathroom</h3>
+            <p>Clean and practical full bathroom.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">1</span>
+            <h3>Kitchen</h3>
+            <p>Functional kitchen ready for everyday use.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">✓</span>
+            <h3>Convenient Location</h3>
+            <p>Close to shopping, transportation, and local services.</p>
+          </article>
+        </div>
+
+        <div class="details-panel">
+          <div>
+            <h3>About the Apartment</h3>
+            <p>
+              This inviting rental offers a practical layout and a convenient location in Allentown.
+              Replace this text with details about rent, utilities, parking, pets, laundry, lease terms,
+              and the date the apartment is available.
+            </p>
+          </div>
+          <ul class="amenities">
+            <li>Bright living space</li>
+            <li>Updated finishes</li>
+            <li>Easy access to local amenities</li>
+            <li>Flexible showing times</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="gallery">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Gallery</p>
+          <h2>See the Space</h2>
+          <p>Replace the sample images in the <code>images</code> folder with your own apartment photos.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-main">
+            <img src="images/20260829_155149.jpg">
+          </figure>
+          <figure>
+            <img src="images/20260829_155116.jpg">
+          </figure>
+          <figure>
+            <img src="images/20260829_155055.jpg">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Interested?</p>
+          <h2>Schedule a Showing</h2>
+          <p>Contact the property owner or manager to ask questions or arrange a tour.</p>
+          <div class="contact-info">
+            <p><strong>Address:</strong> 1226 Walnut Street, Allentown, PA 18102</p>
+            <p><strong>Phone:</strong> <a href="tel:+10000000000">(000) 000-0000</a></p>
+            <p><strong>Email:</strong> <a href="mailto:rent@example.com">rent@example.com</a></p>
+          </div>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="I am interested in scheduling a showing."></textarea>
+
+          <button class="btn btn-primary" type="submit">Send Inquiry</button>
+          <p class="form-note">This demo form needs a form service or backend to send messages.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; 2026 Walnut Street Rental. All rights reserved.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
 </body>
 </html>
