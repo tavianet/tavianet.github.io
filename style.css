@@ -301,6 +301,9 @@ h2 {
 
 .contact-info p {
   margin-bottom: 10px;
+  
+}
+.contact-info p:last-child {
   background-color: yellow;
 }
 
