@@ -295,7 +295,7 @@ h2 {
 
 .contact-info {
   margin-top: 28px;
-  background: rgba(255, 255, 255, 0.94);
+  
   
 }
 
@@ -303,9 +303,7 @@ h2 {
   margin-bottom: 10px;
   
 }
-.contact-info p:last-child {
-  background-color: yellow;
-}
+
 
 .contact-form {
   padding: 30px;
